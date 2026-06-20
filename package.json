@@ -1,0 +1,15 @@
+{
+  "name": "mindsprint-ai",
+  "version": "1.0.0",
+  "description": "MindSprint AI - Mental wellness and academic resilience platform for students",
+  "main": "server/src/server.js",
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
